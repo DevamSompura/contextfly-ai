@@ -14,26 +14,22 @@ I wanted to make this easy for anyone to try out. If you have Python installed, 
 
 ### 1. Get the code
 Download the project to your computer:
-```bash
+
 git clone [https://github.com/DevamSompura/contextfly-ai.git](https://github.com/DevamSompura/contextfly-ai.git)
 cd contextfly-ai
 
 
-2. Start the backend server
-    1.Go into the backend folder: cd contextfly-backend
-
-    2.Set up a quick virtual environment: python -m venv venv
-
-    3.Turn it on:
+### 2. Start the backend server
+1. Go into the backend folder: cd contextfly-backend
+2. Set up a quick virtual environment: python -m venv venv
+3. Turn it on:
         ->Windows: venv\Scripts\activate
         ->Mac/Linux: source venv/bin/activate
-
-    4.Install the parts it needs: pip install fastapi uvicorn pydantic requests python-dotenv
-
-    5.Make sure you have your AI API key in a .env file, then run: uvicorn main:app --reload
+4. Install the parts it needs: pip install fastapi uvicorn pydantic requests python-dotenv
+5. Make sure you have your AI API key in a .env file, then run: uvicorn main:app --reload
 
 
-3. Add the extension to Chrome
+### 3. Add the extension to Chrome
     1.Open Chrome and go to chrome://extensions/.
 
     2.Toggle "Developer mode" in the top right.
