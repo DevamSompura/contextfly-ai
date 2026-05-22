@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ContextFly AI",
+  "version": "1.0.0",
+  "description": "An open-source full-stack AI context layer bridging multi-tab developer workflows.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"],
+      "css": ["css/context-style.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

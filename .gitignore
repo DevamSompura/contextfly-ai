@@ -1,0 +1,9 @@
+# Ignore the secret environment keys inside any folder
+.env
+contextfly-backend/.env
+
+# Ignore system/compilation clutter
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
